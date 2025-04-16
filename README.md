@@ -29,3 +29,12 @@
 ## IDE 
 ### ZED
 [LINK](https://zed.dev/)
+
+
+## for records
+### obsidian
+[LINK](https://obsidian.md/)
+####  Extensions:
+- Git
+- Excalidraw
+- Kanban
