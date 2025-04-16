@@ -21,9 +21,9 @@
 - Copy current URL -> `Not set`
 - Toggle Inspecor -> `Shift+Ctrl+C`
 
-### GENERAL
+#### GENERAL
 
-####  Extensions:
+#####  Extensions:
 - uBlock Origin
 
 ## IDE 
