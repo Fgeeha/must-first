@@ -28,15 +28,7 @@
 ![Screenshot05.png](img/Screenshot05.png)
 
 
-мой лист адресов:
-
-- *.spotify.com
-
-- *.2ip.ru
-
-- *.openai.com
-
-- *.chatgpt.com
+мой [файл rule list]((https://github.com/Fgeeha/must-first/tree/Master/Proxy%2BGoogle%2Chrome/file/OmegaRules_auto_switch.sorl))
 
 
 | Sort | Condition Type | Condition Details   | Profile | Actions         |
