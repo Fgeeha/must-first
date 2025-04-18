@@ -25,7 +25,7 @@
 
 #####  Extensions:
 - uBlock Origin
-- [ZeroOmega--Proxy SwitchyOmega V3](https://addons.mozilla.org/en-US/firefox/addon/zeroomega/)
+- ZeroOmega Proxy SwitchyOmega [Mozilla V](https://addons.mozilla.org/en-US/firefox/addon/zeroomega/) | [Google V](https://chromewebstore.google.com/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?pli=1)
 
 ## IDE 
 ### ZED
