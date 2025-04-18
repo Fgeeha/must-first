@@ -19,7 +19,10 @@
 - Private Browsing -> `Shift+Ctrl+N`
 - Copy current URL as Markdown -> `Not set`
 - Copy current URL -> `Not set`
-- Toggle Inspecor -> `Shift+Ctrl+C`
+- Toggle Inspector -> `Shift+Ctrl+C`
+- Toggle Compact Mode -> `Ctrl+F11`
+- Enter Full Screen -> `Not set`
+- Exit Full Screen -> `Not set`
 
 #### GENERAL
 
