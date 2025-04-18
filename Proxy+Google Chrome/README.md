@@ -1,48 +1,60 @@
-# Proxy + Google Chrome (yandex browser)
+# 🛡️ Proxy + Google Chrome / Yandex Browser
 
-1. Ставим себе расширение [proxy-switchyomega](https://chromewebstore.google.com/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?pli=1). 
+## 📥 Установка расширения
+1. Установите расширение [Proxy SwitchyOmega](https://chromewebstore.google.com/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) 
+   → Нажмите "Добавить в Chrome".
 
-Нажимаем на расширение справа вверху и переходим в Options, 
-![Screenshot 01.png](img/Screenshot01.png)
-![Screenshot 02.png](img/Screenshot02.png)
+<div align="center">
+  <img src="img/Screenshot01.png" width="45%" alt="Шаг 1">
+  <img src="img/Screenshot02.png" width="45%" alt="Шаг 2">
+</div>
 
-выбираем слева Proxy, 
-![Screenshot03.png](img/Screenshot03.png)
-далее настраиваем, я взял из 3X-UI (или данные, которые вам дали (Protocol + URL + PORT)), далее на замочек справа, там логин и пароль.
-![Screenshot04.png](img/Screenshot04.png)
+---
 
- Мы добавили, куда обращаться.
- 
-Теперь настроим правила маршрута. 
+## ⚙️ Настройка прокси
+1. Нажмите на иконку расширения → **Options** → **Proxy**.
+2. Введите данные (взяты из 3X-UI или вашего провайдера):
+   - **Protocol**: `SOCKS5`
+   - **Server**: `ваш_сервер`
+   - **Port**: `ваш_порт`
+3. Нажмите 🔒 **Padlock** для ввода логина/пароля.
 
-Идем в Auto Switch и пишем так: 
+<div align="center">
+  <img src="img/Screenshot03.png" width="60%" alt="Настройка прокси">
+  <img src="img/Screenshot04.png" width="35%" alt="Авторизация">
+</div>
 
-- Condition Type у всех Host Wildcard 
+---
 
-- Condition Details *.websiteAddress.com
+## 🛣️ Настройка правил маршрутизации
+1. Перейдите во вкладку **Auto Switch**.
+2. Добавьте правила:
 
-- Profile выбираем тот, что заполняли выше у меня это proxy
+   | Condition Type     | Condition Details       | Profile | Actions         |
+   |--------------------|-------------------------|---------|------------------|
+   | Host wildcard      | `*.spotify.com`         | proxy   | 🗑️ 📋 ⬇️        |
+   | Host wildcard      | `*.2ip.ru`              | proxy   | 🗑️ 📋 ⬇️        |
+   | Host wildcard      | `*.openai.com`          | proxy   | 🗑️️ 📋 ⬇️      |
+   | ...                | ...                     | ...     | ...             |
+   | **Default**        |                         | Direct  | ⬆️              |
 
-И нажимаем слева Apply changes.
+3. Нажмите **Apply changes**.
 
-![Screenshot05.png](img/Screenshot05.png)
+<div align="center">
+  <img src="img/Screenshot05.png" width="70%" alt="Правила маршрутизации">
+</div>
 
+📥 [Файл с готовыми правилами](https://github.com/Fgeeha/must-first/raw/Master/Proxy%2BGoogle%20Chrome/file/OmegaRules_auto_switch.sorl)
 
-мой [файл rule list](https://github.com/Fgeeha/must-first/raw/Master/Proxy%2BGoogle%20Chrome/file/OmegaRules_auto_switch.sorl)
+---
 
+## ✅ Проверка работы
+1. Выберите режим **Auto Switch** в расширении.
+2. Проверьте IP на сайтах:
+    - Работает через прокси: [2ip.ru](https://2ip.ru)
+    - Прямое соединение: [Reg.ru](https://www.reg.ru/web-tools/myip)
 
-| Sort | Condition Type | Condition Details   | Profile | Actions         |
-|------|----------------|---------------------|---------|------------------|
-| ⇅    | Host wildcard  | `*.spotify.com`     | proxy   | 🗑 📋 ⬇️         |
-| ⇅    | Host wildcard  | `*.2ip.ru`          | proxy   | 🗑 📋 ⬇️         |
-| ⇅    | Host wildcard  | `*.openai.com`      | proxy   | 🗑 📋 ⬇️         |
-| ⇅    | Host wildcard  | `*.chatgpt.com`     | proxy   | 🗑 📋 ⬇️         |
-| ⇅    | Host wildcard  | `*.youtube.com`     | proxy   | 🗑 📋 ⬇️         |
-| ⇅    | Host wildcard  | `*.google.com`      | proxy   | 🗑 📋 ⬇️         |
-| ⇅    | Host wildcard  | `*.grok.com`        | proxy   | 🗑 📋 ⬇️         |
-|      |                | **Default**         | [Direct]| ⬆️              |
+<div align="center">
+  <img src="img/Screenshot06.png" width="80%" alt="Проверка IP">
+</div>
 
-
-Теперь находим это расширение вверху в браузере и нажимаем на Auto Switch, и можно перейти на https://2ip.ru и проверить, что работает, и на https://www.reg.ru/web-tools/myip, чтобы проверить, что не использует на других сайтах.
-
-![Screenshot06.png](img/Screenshot06.png)
