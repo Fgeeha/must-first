@@ -38,6 +38,19 @@
 
 - *.chatgpt.com
 
+
+| Sort | Condition Type | Condition Details   | Profile | Actions         |
+|------|----------------|---------------------|---------|------------------|
+| ⇅    | Host wildcard  | `*.spotify.com`     | proxy   | 🗑 📋 ⬇️         |
+| ⇅    | Host wildcard  | `*.2ip.ru`          | proxy   | 🗑 📋 ⬇️         |
+| ⇅    | Host wildcard  | `*.openai.com`      | proxy   | 🗑 📋 ⬇️         |
+| ⇅    | Host wildcard  | `*.chatgpt.com`     | proxy   | 🗑 📋 ⬇️         |
+| ⇅    | Host wildcard  | `*.youtube.com`     | proxy   | 🗑 📋 ⬇️         |
+| ⇅    | Host wildcard  | `*.google.com`      | proxy   | 🗑 📋 ⬇️         |
+| ⇅    | Host wildcard  | `*.grok.com`        | proxy   | 🗑 📋 ⬇️         |
+|      |                | **Default**         | [Direct]| ⬆️              |
+
+
 Теперь находим это расширение вверху в браузере и нажимаем на Auto Switch, и можно перейти на https://2ip.ru и проверить, что работает, и на https://www.reg.ru/web-tools/myip, чтобы проверить, что не использует на других сайтах.
 
 ![Screenshot06.png](img/Screenshot06.png)
