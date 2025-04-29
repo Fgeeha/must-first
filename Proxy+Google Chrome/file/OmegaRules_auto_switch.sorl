@@ -23,8 +23,6 @@
 *.jetbrains.com
 @note work
 *.snyk.io
-@note work
-*.clickon.*
 @note youtube
 *.youtu.be
 @note youtube
