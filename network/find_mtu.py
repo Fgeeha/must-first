@@ -1,6 +1,16 @@
 import subprocess
 
 
+#    NOTES
+#
+# 1. Usually this is 1500 by default.
+# 2. If you use a VPN (especially OpenVPN or WireGuard), bet less:
+# * `1400 ' — safe value
+# * '1380 — - for OpenVPN (especially over TCP)
+# * `1280 ' — for IPv6 / unstable connection
+#
+#
+
 def test_ping(size, host="ya.ru"):
     try:
         result = subprocess.run(
