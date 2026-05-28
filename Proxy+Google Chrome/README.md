@@ -3,7 +3,9 @@
 ## 📥 Установка расширения
 1. Установите расширение [Proxy SwitchyOmega](https://chromewebstore.google.com/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif) 
    → Нажмите "Добавить в Chrome".
+   
 1.1 Для firefox [ZeroOmega--Proxy SwitchyOmega V3](https://addons.mozilla.org/ru/firefox/addon/zeroomega/)
+
 1.2 Для yandex/opera [proxy switcher manager](https://addons.opera.com/ru/extensions/details/proxy-switcher-manager/)
 
 <div align="center">
